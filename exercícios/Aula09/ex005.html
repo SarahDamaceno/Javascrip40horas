@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(51, 79, 155);
+            color: white;
+            font: normal 18pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" >Clique em mim</div>
+    <script>
+        //para id
+        //var d= window.document.getElementById("msg")
+       // window.document.write(msg.innerText)
+       //window.document.getElementById("msg").innerText='oLÁ'
+       
+        var d= window.document.querySelector("div#msg")
+        d.style.background= 'blue'
+       
+
+       /*
+          SELEÇÃO POR NOME
+          var d= window.document.getElementsByName("msg")[0]
+       d.innerText='olá'
+       lembrando que no caso, o id deveria ser como no ex: <div name="msg"
+
+
+       SELEÇÃO POR CLASS
+          window.document.getElemtByClassName("msg")[0]
+
+      SELEÇÃO POR SELETOR 
+         var d= window.document.querySelector("div#msg")
+          d.style.background= 'blue'
+       */
+    </script>
+</body>
+</html>

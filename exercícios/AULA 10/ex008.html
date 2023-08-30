@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando navamente O somando valores</title>
+</head>
+<body>
+    <h1>Teste 02 do Somando valores</h1>
+    <input type="number" name="valor1" id="valor1"> +
+    <input type="number" name="valor2" id="valor2">
+    <input type="button" value="Somar" onclick="Somar()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function Somar(){
+            var One= window.document.getElementById('valor1')
+            var Two= window.document.getElementById('valor2')
+            var res= window.document.getElementById('res')
+            var n1= Number(One.value)
+            var n2= Number(Two.value)
+            var s= n1+n2
+            res.innerHTML=`A soma entre os valores ${n1} e ${n2} é igual a ${s}`
+            //TEM QUE PRESTAR MUITA ATENÇÃO PORQUE QUALUQUER COISINHA FAZ DIFERENÇA
+
+        }
+    </script>
+</body>
+</html>

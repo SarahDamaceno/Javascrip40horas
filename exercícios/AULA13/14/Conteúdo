@@ -1,0 +1,92 @@
+//Módulo E: Repetições em JS
+
+//Repetições com teste no início 
+//Repetições com teste no final
+//Repetições com controle
+
+//Repetições: o laço quebra quando der falso, enquanto for verdadeiro executa em looping
+//while (condição) enquanto essa condição for verdaeira, executa o laço
+// whilhe(){
+
+//      }
+
+/**
+ * 
+ *      function comerPizza(){
+ *              
+ *          while(tem fatia()) {
+ *           comerFatia()
+ * 
+ * 
+ *          }
+ *              
+ *       }
+ * 
+ 
+ */
+
+/*
+ Ambiente js ex de estrutura de repetição com teste lógico no início- faz o teste, enquanto for verdaeiro executa o bloco (while-Enquanto)
+
+       while(condição){
+          bloco
+       }
+ 
+
+ Estrutura de repetição com teste lógico no final- Primeiro executa o bloco e depois faz o teste (Do- Faça)
+
+    Do{
+        bloco
+    }while(condição)
+
+Estrutura de repetição com variável de controle:
+inicialização, teste lógico e incremento. no momento do looping ele faz o incremento. 
+
+       for(início;test,incr){
+
+            bloco
+
+       }
+
+Na primeira passagem pelo "for" ele vai fazer a inicialização e o teste, sendo esse teste verdadeiro, ele vai executar o bloco, ele volta pra cima e fazer o incremento, depois relizar o tste logico novamente. se for v faz tudo de novo
+
+
+MODO DEPURAÇÃO
+(ANOTAR) AULA 14 PARTE 2
+PRECISO APRENDER O WATCH IN CHROME
+
+
+Estrutura de repetição com variável de controle. Nela são feitas 3 coisas(inicialização, teste lógico e um incremento)
+Na primeira passagem ele faz a inicialização e o teste lógico. Sendo este, verdadeiro, então ele executa o bloco, feito o bloco ele vai voltar, só que agora, no momento do looping ele faz também o incremento.O teste lógico então é feito mais uma vez, e sendo verdaeiro mais uma vez é executado e o looping acontecerá novamente. Essa estrutura vai rodar e a cada v incrementa e faz o teste lógico, e quando esse teste lógico ficar falso, ele seguirá o caminho de encerramento.
+
+ex 
+    for (inicio; teste; incr){
+          bloco
+    }
+
+    var c=1 
+    while(c<=10){
+
+    
+       c++ //c+1
+    }
+
+    Reescrevendo esse mesmo código utilizando a estrutura for
+
+    for(var c=1; c<=10; c++){
+
+    }
+
+
+para ver passo a passo o cod sendo executado
+
+em debug- start debug
+voce pode marcar ou desmarcar uma linha
+vai em watch e clica em + e ele vai perguntar qual expressão voce quer monitorar. digita e executa no play verde
+no debug console(aquela janelinha que abre quando apertamos f8) quando aprta f10. atraves da seta amarela e do cursor vc pode acompanhar o que esta sendo execuatdo. vai apertando f 10
+
+o modo depuração facilita a execução dos nossos scripts para vermos se estão funcionando.(no insetinho)
+
+
+quando voce esreve um progrma e n recebe mensagem de erro n significa que esteja correto. talvex haja erro de logica e talvez não de sintaxe
+*/

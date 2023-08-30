@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background:rgb(79, 47, 138);
+            color: white;
+            width:200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+      interaja...
+    </div>
+    <script>
+        //tudo que está dentro de funtion será executado quando chmar o 'clicar'
+        var a= window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        /*
+            tinhamos colocado essas espcificações da div, mas ficava um html poluido:
+
+            <div id="area" onclick="clicar()" onmouseenter="entar()" onmouseout="sair()"
+
+            da segunda forma como fizemos, o html fica limpo e o js que trata de fazer a ligação 
+        */ 
+        //coloquei o objeto do lado de fora para ficar com o escopo global. mais pra frente vamos ver que essa parte pra fora n é a melhor opção
+        function clicar(){
+            
+            a.innerText= "Clicou" //Disparei o evento onclick
+            a.style.background= "blue"
+
+        }
+
+        function entrar(){
+            a.innerText=("Entrou!")
+
+        }
+
+        function sair(){
+            a.innerText=("saiu!")
+            a.style.background="rgb(79, 47, 138)"
+        }
+    </script>
+     <!--EVENTOS DOM
+         Evento é tudo aquilo que pode acontecer com (no nosso ex) essa div
+
+         mouseenter (mouse dentro da div)
+         mouse move( movendo dentro da div)
+         mousedown(clicou e segurou)
+         mouseup(soltou)
+         click(apertar e soltar rapidamente)
+         quando mover o mouse pra fora da div(mouseout)
+
+         Nem todos os elemntos são compativeis com todos os eventos. tem eventos específicos para cada situação
+
+         Para disparar/ tratar um evento, é preciso entender o que é uma função
+
+         FUNÇÃO/FUNCIONALIDADE
+          
+         É um conjunto de códigos/linhas, que serão executadas apenas quando o evento ocorrer.
+         ex: quando programo 10 linhas ( bloco) essas 10 linhas não serão executadas automaticmante. Agr esssas 10 linhas serão executadas por ex, quando eu clicar dentro da div, ou seja, serão executadas apenas quando o evento ocorrer.
+          pra que elas sejam execuatadas apenas nessa situação, é necessa´rio colocalas dentro de um bloco que é delimitado entre os sinais de chaves 
+
+          function ação(){
+            bloco
+          }
+          Então voce abre chaves, põe seu código e fecha chaves (isso nós chamamos de bloco) Esse bloco precisa ser nomeado como uma function. é preciso dar um nome e geralmente os nomes são acoes que podemos fazer. poe o nome da ação que vai acontecer e o parentese. Opcionalmente, pode colocar dentro desse parenteses alguns parametros
+
+            Os eventos podem ser confgurados na parte html ou diretamente no javascript
+    
+    -->
+</body>
+</html>

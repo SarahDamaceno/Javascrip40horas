@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae architecto excepturi inventore alias deserunt officiis et cupiditate incidunt nemo illo, quia, nihil mollitia pariatur veritatis vitae ex laboriosam accusamus.</p>
+    <script>
+        var n1= Number(window.prompt('Digite um número:')) //como aqui eles recebem valor string 
+        /*O que fiz ao colocar numberparceInt é converter para inteiro antes de jogar dentro da variavel n1*/
+        var n2= Number(window.prompt('digite outro número')) //string
+        var s= n1+n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é igual a: ${s}`)
+
+        // (number+number) para adição
+        //(string+string) para concatenação
+        /*
+        conversao de string p/ numero
+          precisaremos fazer uma conversão de tipo, pois o n1 e n2 estão como string.
+           se quisr converter para inteiro: Number.parseInt(n)
+           se quiser converter para real: Number.parseFloat(n) (obsrevar onde tem letras maius ou min e por igual pra q funcione)
+        Agora na versão atualizada do JS voce so precisa usar Number(n)que ele irá identificar se é inteiro ou real sem a necessidade de especificar
+
+        conversão de number p/ string
+         string(n)
+         n.toString() (n é o numero q voce ira digitar)
+
+        Formatando Strings
+         var s= 'javaScript'
+          'Eu estou aprendendo s'( não faz interpolação)
+          'Eu estou aprendendo' + s (usa concatenação)
+          `eu estou aprendendo $ {s}´ (usa template) Que tem a mesma função da concatenação, mas ajuda na hora de escrever o código pois fica mais fácil pois ao invés de ser: 'O aluno'+ nome + 'com'+ idade + 'anos, tirou a nota:' + nota
+
+          a gente troca pelo template etsring
+
+          vai ficar: `O Aluno ${nome} com ${idade} anos, tirou a nota ${not} `  (mais facil de digitar)
+
+          -------
+
+          var s='JavaScript'
+            s.length //Para saber quantos caracteres a string tem
+            s.toUpperCase() //Joga tudo para letras maiúsculas
+            s.toLowerCase() //Joga t p letras minusculas
+        */
+
+    </script>
+</body>
+</html>

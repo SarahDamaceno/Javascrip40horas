@@ -1,0 +1,130 @@
+/*
+Conteúdo da Aula 15(vetores,array, variaveis compostas)
+
+variáveis simples só armazenam um valor por vez
+
+variavel composta armazena vários valores em uma mesma estrutura
+
+Declarar muitas variáveis de uma vez, consome muitas linhas em nosso código. ex:
+   vaga a0
+   vaga a1
+   vaga a2
+   vaga a3
+   vaga a4
+   vaga a5
+
+   Uma forma mais simples para escrever menos e poder gerenciar melhor as variiaveis.
+
+   1-Todas as vagas terão o mesmo nome
+    (Importante: coloque nomes claros nas suas variáveis. ex:a de automóveis, auto)
+  a{
+     vaga a0
+     vaga a1
+     vaga a2
+     vaga a3
+     vaga a4
+     vaga a5
+   }
+   2-Vou colocar um identificador de índice. Uma chave que vai identificar cada uma delas. ex
+     
+     vaga a = [0]
+
+   3- Para definir o numero de elementos dentro da variável, separar cada espaço por "," Ex:
+
+     vaga a= [  ,  , ]
+
+    4- Cada um desses espaços, além de receber um elemento irá tambpem receber um identificador/ índice. ex
+
+      vaga a = [ carro1 , carro2  ,carro3  ]
+                   0        1         2 
+        a variável "a" é um vetor/array: uma variável com varios espaços
+        o vetor é composto de elementos.
+        O elemento de um vetor, é um par que agrupa um espaço na memória, o valor colocado dentro dele, e o indice
+        índice é esse valor debaixo. também pode ser chamado de chave
+        E temos também o conteúdo de cada elemento
+
+        Representando mais um vetor ex
+
+        let num[ 5, 8 , 4 ]
+                
+
+                num { 5 | 8 | 4 }
+                      0   1   2
+
+     obs: As var compostas na maioria das linguagens começam com o índice 0 não com 1. Então uma variável composta de 10 posições, não vai de 1 á 10, mas sim de 0 á 9
+    Ex de vator:
+        let num = [ 5, 8, 2, 9, 3]
+         console.log(`Nosso vetor é o ${num}`)
+
+    E se eu quiser acrescentar um valor sem perder os ja existentes ex:
+        
+         let num[ 5, 8 , 4 ]
+                
+
+                num { 5 | 8 | 4 }
+                      0   1   2
+
+        Se eu quiser acrscentar nesse vetor, a vaga 3:
+
+        num[3]= 6
+           
+           Quando eu coloco o 'num' e entre colchetes o 3 estou dizendo: "Coloque o valor 6 na posição 3. Daí ele cria mais um elemnto
+
+               num { 5 | 8 | 4 | 6 }
+                     0   1   2   3
+-------------------------------------
+        Para acrescentar um valor específico na última posição independente se o sort (coloca em ordem crescente)está no código : num.push(7)  
+
+              num { 5 | 8 | 4 | 6  | 7 }
+                     0   1   2   3   4
+
+         se primeiro organizar (sort) e depois colocar na ultima posição (num.push)
+         faz diferença do que colocar na ordem contraria
+
+         Para saber o cumprimento de um array: num.length. Ele conta quantas casas/ elementos tem no array e conta então o comprimento desse array/ vetor:
+
+             
+              num { 5 | 8 | 4 | 6  | 7 }
+                     0   1   2   3   4
+             ........5 elementos........
+
+        num.sort() Ele vai pegar todos esses elementos e colocar em ordem crescente
+            
+            
+              num { 4 | 5 | 6 | 7  | 8 }
+                     0   1   2   3   4
+
+        Para mostrar na tela 
+             
+             console.log(num[0])  -Mostra 4
+             console.log(num[1])  -Mostra 5
+
+             e posso fazer a mesma coisa para todos os elementos que quiser mostrar
+             maaaas, o código fica grande
+
+             solução: usar estrutura de repetição
+
+            for ( let pos=0 ; pos< num.length ; pos++    ){   
+                console.log(num[pos] )
+            }
+
+            no segundo espaço LE-SE: enquanto pos não chegar no final do meu vetor (length que é o cumprimento dele)
+
+            --------
+            mais um comando: buscar valores dentro de um vetor
+
+             num.indexOf(7) | 3
+             num.indexOf(3) | -1
+             
+                Ele vai procurar no vetor, onde está o valor 7. Essa função iá me retornar a chave onde esse valor se encontra. nesse caso ele vai responder que tem o  valor 7 no vetor e q está na posição 3. Se procurarmos no vetor um numero que não está la ele vai retorar -1 no sentido de q não tem esse valor no vetor 
+               
+               num { 4 | 5 | 6 | 7  | 8 }
+                     0   1   2   3   4
+
+
+
+
+   
+
+
+*/

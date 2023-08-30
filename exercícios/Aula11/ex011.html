@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Consulta de Nacionalidade</h1>
+    Qual seu país? <input type="País">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res"></div>
+    <div id="r"></div>
+
+
+    <script>
+        function Verificar(){
+            var perg=window.document.getElementById('País')
+            var res= window.document.getElementById('res')
+            var r= window.document.getElementById('r')
+            var r= perg //DESCOBRIR COMO ATRIBUI ESSA VARIAVEL
+            res.innerHTML= `Voce é do ${r}`
+             if (r== Brasil){
+                res.innerHTML =+ ` <p> Você É BRASILEIRO</p>`
+             }
+              
+               
+
+        }
+
+    </script>
+    
+            
+
+
+     
+</body>
+</html>

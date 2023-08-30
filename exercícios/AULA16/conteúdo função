@@ -1,0 +1,70 @@
+     /*
+     As funções podem ter os seguintes elementos:
+     chamada, parâmetro, ação e um retorno (algumas podem não ter todas essas carcterísticas)
+
+     Definição técnica: Funções são ações executadas assim que são *chamadas* ou em decorrência de algum *evento*
+    
+    Uma função pode receber *parâmetros* e retornar um *resultado*
+
+    ex
+        function ação(param){
+
+        }
+       
+    No meio dos parenteses é onde vamos colocar os parametros. Esses parametros serão processados pela ação e podem ter um resultado. Essa ação, não executa, por padrão pois para isso temos que ter uma chamada:
+
+     ex
+        function ação(param){
+           .
+           . contas,estruturas etc
+           return res
+        }
+
+        ação(5)
+
+    O que significa ação 5? estou chamando a ação que vai passar um valor para o parametro, nesse ex ele vai valer 5. Daí fara as contas/ processamento e no final posso dar o retorno do resultado. Esse retorno do resultado vai ser voltado de novo pra chamada "ação"
+
+    (a chamada que vai disparar a função)
+    
+    ex1 verificar se um num é par ou impar
+       
+        function parimp(n){
+            if(n % 2==0){
+              return 'par'
+            }else{
+               return 'ímpar'
+            }
+        }
+
+        Se deixar o código assim, ele não será executado pois não teve a chamada.
+        Para fazer a chamada cria uma variável para chamar a função. ex:
+
+        function parimp(n){
+            if(n % 2==0){
+                return 'par'
+            }else{
+              return 'ímpar'
+            }
+        }
+
+        let res= parimp(11)
+        
+        A função passara valer 11 e será executada. o resultado do return dará impar e esse resultado ira para dentro de res. agora é preciso mostrar a variável res na tela 
+
+        function parimp(n){
+           if(n % 2==0){
+               return 'Par!'
+           }else{
+               return 'Ímpar!'
+           }
+        }
+       
+        let res= parimp(11)
+        console.log(parimp(11))
+
+        posso ter mais de um return dentro de uma function desde que seja possível executar apena 1 por vez
+      
+
+        //console.log significa: escreva na tela
+    */
+
